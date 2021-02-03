@@ -1,12 +1,12 @@
 
 exports.min = function min (array) {
   if (array === undefined || array.length == 0) return 0
-  return array.reduce((acc,item)=>acc>item?item:acc, 10000);
+  return array.reduce((acc,item)=>acc>item?item:acc, +Infinity);
 }
 
 exports.max = function max (array) {
     if (array === undefined || array.length == 0) return 0
-    return array.reduce((acc,item)=>acc>item?acc:item, -10000);
+    return array.reduce((acc,item)=>acc>item?acc:item, -Infinity);
 }
 
 exports.avg = function avg (array) {
